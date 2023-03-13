@@ -3,20 +3,24 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gallery view</title>
 </head>
 <body>
     <div class="Continer" id="get">
+
         <header>
-            <h2>Bike</h2>
-            <h3>“It never gets easier, you just go faster”</h3>
+            <div class="title"><img src="Group 1.png" alt=""></div>
+            <h4>“It never gets easier, you just go faster”</h4>
         </header>
         <div class="full-img" id="full-img">
                 <img src="" id="image">
-                <span id="rotate" onclick="Rotate()">R</span>
-                <span id="Zoomin" onclick="zoomin()">+</span>
-                <span id="Zoomout" onclick="zoomout()">-</span>
-                <span onclick="closeimage()">X</span>
+                <span id="rotateR" onclick="Rotater()"><i class="fa fa-repeat" aria-hidden="true"></i></span>
+                <span id="rotateL" onclick="Rotatel()"><i class="fa fa-undo" aria-hidden="true"></i></span>
+                <span id="Zoomin" onclick="zoomin()"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+                <span id="Zoomout" onclick="zoomout()"><i class="fa fa-search-minus" aria-hidden="true"></i></span>
+                
+                <span onclick="closeimage()"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
         </div>
         <div class="gallery">
             <img src="image1.jpg" onclick="openimage(this.src)">
@@ -32,6 +36,10 @@
             <img src="image11.jpg" onclick="openimage(this.src)">
             <img src="image12.jpg" onclick="openimage(this.src)">
         </div>
+    </div>
+    <div class="half">
+        <h2>HAi</h2>
+        
     </div>
     <script src="script.js"></script>
 </body>
