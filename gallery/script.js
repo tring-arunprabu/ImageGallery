@@ -1,5 +1,5 @@
-var picture = document.getElementById("full-img");
-var image  = document.getElementById("image");
+let picture = document.getElementById("full-img");
+let image  = document.getElementById("image");
  
 const openimage =(pic) =>
 {
